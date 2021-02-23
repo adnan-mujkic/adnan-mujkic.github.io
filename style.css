@@ -1,0 +1,220 @@
+body{
+   background-image: url('/Images/bg.png');
+   margin: 0;
+   padding: 0;
+}
+h1{
+   font-family: 'Balsamiq Sans', cursive;
+}
+h2{
+   font-family: 'Balsamiq Sans', cursive;
+}
+p{
+   font-family: 'Overpass', sans-serif;
+}
+a{
+   text-decoration: none;
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   padding: 10px 15px;
+   color: #FFB4A2;
+   border: solid 2px #FFB4A2;
+   margin-top: 10%;
+   border-radius: 5px;
+   font-family: 'Overpass', sans-serif;
+   letter-spacing: 1.5px;
+}
+a:hover{
+   color: #6D6875;
+   background-color: #FFB4A2;
+}
+
+.custom-nav{
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 500px;
+   height: 60px;
+   background-color: transparent;
+   border-radius: 20px 20px 0 0;
+
+   margin-top: 10%;
+}
+.custom-nav a{
+   position: absolute;
+   display: block;
+   height: 100%;
+   width: 48%;
+   margin: 0;
+   border: none;
+   color: #FDD8C4;
+   text-align: center;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+.custom-nav a:hover{
+   color: #6D6875;
+   background-color: #FFB4A2;
+   border-radius: 20px 20px 0 0;
+}
+.selected{
+   color: #6D6875 !important;
+   background-color: #FFB4A2;
+   border-radius: 20px 20px 0 0;
+}
+.left-button{
+   left: 0;
+}
+.right-button{
+   left: 50%;
+}
+
+.introduction{
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 80vw;
+   height: 300px;
+   background-color: transparent;
+   margin: 8% 0 0 0;
+   padding: 1% 5%;
+}
+.intro-text{
+   position: relative;
+   width: 50%;
+   height: 100%;
+   padding: 20px;
+
+}
+.intro-text h1{
+   color: #FDD8C4;
+   margin-bottom: 4%;
+   font-size: 3.1rem;
+}
+.intro-text p{
+   color: #FFC4AC;
+   font-size: 1.1rem;
+}
+
+.container{
+   background-color: #6d6875;
+   width: 80vw;
+   height: 100vh;
+   box-shadow: 10px 0px 50px rgba(0,0,0,0.1), -10px 0px 50px rgba(0,0,0,0.1);
+   margin-top: 0;
+   border-radius: 20px;
+}
+.game-post{
+   position: relative;
+   height: 500px;
+   width: 100%;
+   padding: 3%;
+}
+.game-image{
+   position: relative;
+   display: block;
+   left: 0;
+   width: 50%;
+   height: 100%;
+}
+.game-text{
+   padding: 10%;
+}
+.game-text h2{
+   margin-bottom: 7%;
+   color: #FFC4AC;
+}
+.game-text p{
+   margin-bottom: 12%;
+   color: #FDD8C4;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+   /* For mobile phones: */
+   .introduction{
+      position:relative;
+      left: 0;
+      transform: translateX(0);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+   .intro-text{
+      position: relative;
+      width: 100%;
+      top: 200px;
+      padding: 0 10%;
+
+   }
+   .intro-text h1{
+      font-size: 2.1rem;
+   }
+   .custom-nav{
+      transform: translateX(0);
+      left: 0;
+      padding: 0;
+      margin: 20% 0 0 0;
+      width: 100%;
+   }
+   .custom-nav a{
+      border-radius: 0;
+      width: 50%;
+   }
+   .custom-nav a:hover{
+      color: #6D6875;
+      background-color: #FFB4A2;
+      border-radius: 0;
+   }
+   .container{
+      width: 100%;
+      margin: 0 !important;
+      padding: 0;
+      max-width: 100%;
+      border-radius: 0;
+   }
+   .game-image img{
+      width: 120%;
+   }
+   .game-text{
+      padding: 5%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+#myBtn {
+   display: none; /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   bottom: 20px; /* Place the button at the bottom of the page */
+   right: 30px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   border: none; /* Remove borders */
+   outline: none; /* Remove outline */
+   color: transparent; /* Text color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   padding: 5px; /* Some padding */
+   width: 80px;
+   height: 80px;
+   background-color: transparent;
+   background-image: url('/Images/Scroll\ up.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+ }
+
+ #myBtn:hover {
+    width: 86px;
+    height: 86px;
+    transform: translate(3px, 3px);
+ }
