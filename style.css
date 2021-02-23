@@ -227,6 +227,11 @@ a:hover{
       padding: 0;
       max-width: 100%;
       border-radius: 0;
+      box-sizing: border-box;
+   }
+   .profile-buttons-container{
+      width: 50%;;
+      box-sizing: border-box;
    }
    .game-image img{
       width: 120%;
