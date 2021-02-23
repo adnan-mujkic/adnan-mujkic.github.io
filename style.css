@@ -79,13 +79,14 @@ a:hover{
    background-color: transparent;
    margin: 8% 0 0 0;
    padding: 1% 5%;
+   display: flex;
 }
 .intro-text{
    position: relative;
    width: 50%;
    height: 100%;
    padding: 20px;
-
+   flex: 1 0 0%;
 }
 .intro-text h1{
    color: #FDD8C4;
@@ -95,6 +96,17 @@ a:hover{
 .intro-text p{
    color: #FFC4AC;
    font-size: 1.1rem;
+}
+.intro-pic{
+   position: relative;
+   display: block;
+   top: 0;
+   flex: 1 0 0%;
+}
+.intro-pic img{
+   width: 300px;
+   left: 50%;
+   transform: translateX(50%);
 }
 
 .container{
@@ -142,16 +154,23 @@ a:hover{
       width: 100%;
       margin: 0;
       padding: 0;
+      display: block;
    }
    .intro-text{
       position: relative;
       width: 100%;
-      top: 200px;
+      top: 300px;
       padding: 0 10%;
 
    }
    .intro-text h1{
       font-size: 2.1rem;
+   }
+   .intro-pic img{
+      position: absolute;
+      top: 2%;
+      right: 50%;
+      transform: translate(-50%, -100%);
    }
    .custom-nav{
       transform: translateX(0);
