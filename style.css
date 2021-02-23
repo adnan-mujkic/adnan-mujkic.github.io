@@ -2,6 +2,7 @@ body{
    background-image: url('/Images/bg.png');
    margin: 0;
    padding: 0;
+   overflow-x: hidden;
 }
 h1{
    font-family: 'Balsamiq Sans', cursive;
@@ -104,9 +105,10 @@ a:hover{
    flex: 1 0 0%;
 }
 .intro-pic img{
-   width: 300px;
+   position: relative;
+   width: 350px;
    left: 50%;
-   transform: translateX(50%);
+   transform: translateX(-50%);
 }
 
 .container{
@@ -115,7 +117,7 @@ a:hover{
    height: 100vh;
    box-shadow: 10px 0px 50px rgba(0,0,0,0.1), -10px 0px 50px rgba(0,0,0,0.1);
    margin-top: 0;
-   border-radius: 20px;
+   border-radius: 20px 20px 0 0;
 }
 .game-post{
    position: relative;
@@ -140,6 +142,36 @@ a:hover{
 .game-text p{
    margin-bottom: 12%;
    color: #FDD8C4;
+}
+
+.intro-text-about{
+   padding: 10% 20%;
+   text-align: center;
+}
+.intro-text-about h1{
+   color: #FDD8C4;
+   margin-bottom: 4%;
+   font-size: 3.1rem;
+}
+.intro-text-about p{
+   color: #FFC4AC;
+   font-size: 1.1rem;
+}
+.profile-buttons-container{
+   position: relative;
+   display: block;
+   left: 50%;
+   transform: translate(-90px, 0);
+}
+.profile-link{
+   text-decoration: none;
+   background-color: transparent;
+   border: none;
+   width: 60px;
+   height: 60px;
+}
+.profile-link img{
+   width: 100%;
 }
 
 
@@ -171,6 +203,7 @@ a:hover{
       top: 2%;
       right: 50%;
       transform: translate(-50%, -100%);
+      width: 300px;
    }
    .custom-nav{
       transform: translateX(0);
