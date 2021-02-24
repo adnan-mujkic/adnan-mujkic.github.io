@@ -5,13 +5,16 @@ body{
    overflow-x: hidden;
 }
 h1{
-   font-family: 'Balsamiq Sans', cursive;
+   font-family: 'Balsamiq Sans', cursive !important;
 }
 h2{
-   font-family: 'Balsamiq Sans', cursive;
+   font-family: 'Balsamiq Sans', cursive !important;
+}
+h3{
+   font-family: 'Balsamiq Sans', cursive !important;
 }
 p{
-   font-family: 'Overpass', sans-serif;
+   font-family: 'Overpass', sans-serif !important;
 }
 a{
    text-decoration: none;
@@ -231,6 +234,7 @@ a:hover{
       margin: 60% 0 0 0;
       width: 60%;
       border-radius: 50px;
+
    }
    .custom-nav a{
       border-radius: 20px 20px 0 0;
@@ -241,7 +245,14 @@ a:hover{
       background-color: #FFB4A2;
       border-radius: 20px 20px 0 0;
    }
+   .left-button{
+      font-size: 1rem !important;
+   }
+   .right-button{
+      font-size: 1rem !important;
+   }
    .container{
+      height: 100vh;
       width: 100%;
       margin: 0 !important;
       padding: 0;
